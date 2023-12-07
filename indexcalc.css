@@ -1,0 +1,87 @@
+body {
+    background-color: whitesmoke;
+    font-family: arial;
+    color: white;
+
+}
+
+h1 {
+    color: grey;
+    font-family: verdana;
+}
+
+.maindiv {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 7%
+  }
+
+.calcdiv {
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+    justify-content: center;
+    float: center;
+
+}
+
+.calcdiv p {
+    text-wrap: wrap;
+}
+
+.infodiv {
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 25px;
+    border-radius: 25px;
+    text-align: center;
+    justify-content: left;
+    float: left;
+}
+
+.infodiv ul {
+    text-align: left;
+}
+
+
+.fundiv {
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 20px;
+    padding-top: 80px;
+    border-radius: 25px;
+    text-align: center;
+    justify-content: center;
+    float: right;
+}
+
+footer {
+    padding-top: 40%;
+    justify-content: end;
+    font-size: smaller;
+    color: blue;
+}
+
+datalist {
+    background-color: lightgrey;
+}
+
+button {
+    border-radius: 25px;
+    border-width: 0 cap;
+    border-color: grey ;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 13%;
+}
+
+button:hover {
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+}

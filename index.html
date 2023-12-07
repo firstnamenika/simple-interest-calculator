@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Interest Calculator</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./indexcalc.css">
+    </head>
+<body>
+<br>
+<div class="maindiv">
+<article>
+    <div class="infodiv">
+        <p>To determine the simple accrued interest, multiply the account balance by the interest rate and the duration the funds remain in the account.
+The formula for calculating simple interest is as follows: 
+        <br>
+        </p> 
+    <ul>	
+        <p>Interest = P * R * T.<br/>
+           Where:</p>											
+        <li>P stands for the principal amount, i.e., the initial balance.</li>									
+        <li>R represents the interest rate, usually expressed as a decimal per year.</li>					
+        <li>T signifies the number of time periods, typically measured in one-year intervals.</li>				
+    </ul>
+    
+    </div>
+</article>
+
+<div class="calcdiv">          
+        <h1>Simple Interest Calculator</h1>
+    <p>
+        Amount <input type="number"  id="principal">  <br/>
+        Rate <input type="range" id="rate" min="1" max="20" value="5" step="0.25" onchange="updateRate()">
+        <span id="rate_val">
+            5
+        </span> % 
+        <br/>
+        No. of Years <input type="number" id="years" list="all_years">
+        <datalist id='all_years'>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </datalist>
+    </p>
+        <br/>
+        Interest : <span id="result"></span>
+        <br><br>
+        <button class="button" onclick="return compute()">Compute Interest</button>
+</div>
+ 
+
+    <div class="fundiv">
+            <aside>
+                Did you know that a banknote can be folded 4,000 times?<br></br>
+The only producer of U.S. currency, The Bureau of Engraving and Printing, claims that one bill can withstand a total of 4,000 double folds, both forward and backwards, before it would tear.
+            </aside>
+    </div>
+
+
+</div>
+        <br>
+        <footer>
+            &#169; This Calculator brought to you by Veronika Kolesnikova and IBM SkillsNetwork.
+        </footer>
+</body>
+</html>
